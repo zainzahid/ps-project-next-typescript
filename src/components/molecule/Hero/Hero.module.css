@@ -1,0 +1,60 @@
+.hero {
+  height: 176px;
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+  margin-bottom: 2rem;
+}
+.hero h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 29px;
+}
+.hero .left {
+  display: inline-block;
+  width: calc(100% - 300px);
+}
+.hero .right {
+  float: right;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: auto;
+  }
+  .hero h1 {
+    font-size:36px;
+    line-height:43px;
+  }
+  .hero h3 {
+    font-size: 18px;
+    line-height:22px;
+  }
+  .hero img {
+    aspect-ratio:234/176;
+    width:166px;
+    height:125px;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 768px) {
+  .hero img {
+    display:none;
+  }
+  .hero .left {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom:12px;
+  }
+  .hero h3 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

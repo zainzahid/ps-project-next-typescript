@@ -1,0 +1,227 @@
+.signupPage {
+
+  margin: 40px auto;
+  text-align: center;
+}
+.red {
+  color:var(--red);
+}
+.planCard, .searchedCard {
+  margin-bottom:32px;
+}
+.membershipDetails {
+  max-width:1356px;
+  margin:24px auto 64px auto;
+  display:flex;
+  text-align:left;
+  flex-direction: row;
+  align-content:stretch;
+}
+.left {
+  width: 58.997%;
+  margin-right:2.35%
+}
+.right {
+  width: 38.65%;
+}
+.shadedSection {
+  padding:48px 0 64px 0;
+  text-align:center;
+  background-color:var(--shaded-background);
+}
+.benefitsCard, .planCard, .bonusBenefit {
+  padding:0 !important;
+}
+.byline {
+  margin-bottom:0px;
+}
+.bonusBenefit p {
+  margin:12px 0 20px 0;
+}
+.benefitsCard h2, .planCard h2, .bonusBenefit .content {
+  padding:24px 32px;
+}
+.benefitsList {
+  display: grid;
+  list-style-type:none;
+  padding:37px 32px 42px 32px;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 16px 28px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . .";
+  line-height:22px;
+  font-size:18px;
+}
+.benefitsList img {
+  margin-right:8px;
+  min-width:30px;
+  position:relative;
+  bottom:-2px;
+  align-content:center;
+}
+.cancellation {
+  box-shadow:4px 4px 10px var(--black25);
+  border-radius:30px;
+  background:var(--white);
+  border:1px solid var(--link-color);
+  padding:14px 26px 31px 26px;
+  margin-bottom:24px;
+}
+.cancellation img {
+  margin-top: 12px;
+  float:left;
+  margin-right: 13.6px;
+}
+.cancellation p {
+  margin-top:18px;
+  text-align:left;
+}
+.cancellation h3 {
+  color:var(--link-color);
+  font-weight:900;
+  font-size:18px;
+  line-height:22px;
+}
+.paymentGrid {
+  margin:0 auto;
+  display: grid; 
+  grid-template-columns: 1fr 2.144fr 1fr; 
+  grid-template-rows: 1fr; 
+  vertical-align: bottom;
+  gap: 16px 28px; 
+  max-width:1356px;
+  grid-template-areas: 
+    ". . ."; 
+}
+.security {
+  box-shadow:4px 4px 10px var(--black25);
+  background:var(--white);
+  border-radius:5px;
+  overflow:hidden;
+}
+.securityLogos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  padding:9px 0 17px 0;
+}
+.purpleheading {
+  background:var(--link-color);
+  color:var(--white);
+  padding:17px 41px;
+  text-align:center;
+  font-weight:900;
+  font-size:14px;
+  line-height:17px;
+}
+.plan {
+  align-items:center;
+  display:flex;
+  width:100%;
+}
+.plan h4 {
+  font-weight:normal;
+}
+.term {
+  text-align:left;
+  flex-grow:1;
+}
+.term h6 {
+  color:var(--cta-primary);
+  margin-bottom:6px;
+}
+.price {
+  text-align:right;
+  width:120px;
+  flex-grow:0;
+}
+.term h2, .price h2 { padding:0;font-weight:normal;}
+.price h5 {
+  margin-top:6px;
+  font-size:18px;
+  line-height:22px;
+  color:var(--disabledText);
+}
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.profileInfo {
+  flex-grow: 1;
+}
+.profileImage img {
+  box-shadow: 4px 4px 10px var(--black25);
+  border-radius: 50%;
+}
+.profileInfo h1 {
+  color: var(--link-color);
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 18px;
+}
+.paymentForm :global(.col6):first-child {
+  margin-right:20px;
+}
+.paymentForm :global(.row) {
+  margin-bottom:16px;
+}
+.paymentFormFields :global(.col6):first-child {
+  margin-right:0;
+}
+.paymentFormFields :global(.col3) {
+  margin-right:13px;
+}
+.accountFormField, .paymentFormField {
+  text-align: left;
+  width:100%;
+}
+.accountFormField input, .paymentFormField input {
+  width: 100%;
+  margin-right:0;
+  margin-top:4px;
+  display:block;
+}
+.paymentForm :global(.col3) input {
+  width:143px;
+}
+.paymentForm :global(.col6) input {
+  width:311px;
+}
+.paymentForm :global(.col12) input {
+  width: 100%;
+}
+.paymentFormField input::placeholder {
+  color:var(--error);
+}
+.termsContainer {
+  text-align:left;
+  margin-bottom: 38px;
+}
+.explanation {
+  margin-bottom:6px;
+}
+.termsContainer a:hover {
+  text-decoration:underline;
+}
+.termsContainer a {
+  color:inherit;
+  text-decoration:none;
+}
+.termsContainer input[type="checkbox"] {
+  margin-right:8px;
+  margin-top:4px;
+}
+.submit {
+  width: 303px;
+}
+.ctas {
+  display:flex;
+  justify-content:flex-end;
+  flex-direction: column;
+  margin-bottom:71px;
+}

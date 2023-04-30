@@ -1,0 +1,32 @@
+.footer {
+  padding:64px 42px;
+  font-size:12px;
+  line-height:15px;
+  background:var(--white);
+}
+.container {
+  max-width:var(--container-primary);
+  margin:0 auto;
+}
+.footer p {
+  margin-bottom:1.5rem;
+}
+.linkList {
+  text-align:right;
+}
+.linkList ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.linkList ul li {
+  display:inline-block;
+  padding:0 0.12rem;
+}
+.linkList ul li:first-child::before {
+  content:'';
+}
+.linkList ul li::before {
+  content:'|';
+  padding:0 0.12rem;
+}

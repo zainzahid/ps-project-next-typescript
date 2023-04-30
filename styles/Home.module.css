@@ -1,0 +1,77 @@
+.main {
+  background-color: var(--white);
+}
+.container {
+  max-width: 1230px;
+  width: calc(100% - 4rem);
+  margin: 55px auto;
+}
+.heroSpacer {
+  margin-bottom:56px;
+}
+section.shaded {
+  background:var(--shaded-background);
+  padding: 40px 0 49px 0;
+}
+.altShaded .container, .shaded .container {
+  margin: 0 auto;
+}
+.shaded .title {
+  margin-bottom: 40px;
+}
+h1.title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+.cardSection {
+  box-shadow: 4px 4px 10px var(--black15);
+  background: var(--white);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  border: 1px solid var(--outline-alt);
+}
+.cardSection .title {
+  margin-bottom:1.5rem;
+}
+.cardSection p {
+  font-size: 1.125rem;
+  line-height: 22px;
+}
+.altShaded {
+  background-color:var(--link-color);
+  padding-bottom:27px;
+  padding-top:16px;
+}
+.searchPage {
+  margin-top:85px;
+}
+
+@media screen and (max-width:1024px) {
+  .heroSpacer {
+    margin-bottom:40px;
+  }
+  .container {
+    width: calc(100% - 40px);
+    margin: 34px auto;
+  }
+}
+@media screen and (max-width:768px) {
+  .heroSpacer {
+    margin-bottom:24px;
+  }
+  .container {
+    width: calc(100% - 40px);
+    margin: 24px auto;
+  }
+  .cardSection {
+    padding:16px 20px;
+  }
+  .cardSection .title {
+    font-size:18px;
+    line-height:22px;
+  }
+  .cardSection p {
+    font-size:12px;
+    line-height:14px;
+  }
+}

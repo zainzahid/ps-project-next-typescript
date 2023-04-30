@@ -1,0 +1,300 @@
+.animated {
+  margin:0 auto;
+  text-align: center;
+  margin-bottom:94px;
+}
+.highlight {
+  color:var(--highlight-color);
+}
+.marketing {
+  max-width:1355px;
+  margin:0 auto;
+  margin-top:24px;
+  margin-bottom:40px;
+}
+.leftColumn {
+  width: 33.43%;
+  margin-right:24px;
+  display:inline-block;
+  vertical-align:top;
+}
+.searchingFor {
+  text-align:left;
+  margin-bottom:24px;
+}
+.searchingFor .profile {
+  margin-top:1rem;
+}
+.searchingFor .profileImage {
+  display:inline-block;
+}
+.searchingFor .profileInfo {
+  display:inline-block;
+  margin-top:7px;
+  vertical-align:top;
+}
+.searchingFor h1 {
+  color:var(--link-color);
+  font-size:32px;
+  line-height:38px;
+  margin-bottom:4px;
+}
+.searchingFor p {
+  font-size: 18px;
+  line-height: 22px;
+}
+.card.reviews {
+  padding-top:0;
+}
+.rightColumn {
+  vertical-align:top;
+  width:64.79%;
+  display:inline-flex;
+}
+.rightColumn .searchingFor {
+  display:none;
+}
+.checkingFor {
+  text-align:left;
+  margin-bottom:24px;
+  width:100%;
+}
+.card {
+  box-shadow:4px 4px 10px var(--black25);
+  border-radius:10px;
+  padding:32px;
+}
+.recordsGrid {
+  width: calc(100% - 270px);
+  display:inline-block;
+  vertical-align: top;
+}
+.recordsList {
+  margin-top:33px;
+  font-size:18px;
+  line-height:22px;
+}
+.recordsList ul {
+  list-style-type: none;
+}
+.recordsList img {
+  margin-right:6px;
+}
+.recordsList li {
+  margin-bottom:20px;
+}
+.recordsList li:last-child {
+  margin-bottom:8px;
+}
+.checkmark {
+  background-image:url('/img/icons/Checkmark.svg');
+  height:1rem;
+  width:1.25rem;
+  display:inline-block;
+  margin-right:8px;
+}
+.spin {
+  background:var(--white);
+  border-left:1px solid rgb(68,68,207,0.2);
+  border-bottom:2px solid rgb(68,68,207,0.1);
+  border-top:2px solid rgb(68,68,207,0.5);
+  border-right:2px solid rgb(68,68,207);
+  border-radius:50%;
+  margin-right:6px;
+  width:20px;
+  height:20px;
+  aspect-ratio:1/1;
+  display:inline-block;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.recordsGrid ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 4px 4px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". .";
+}
+.magnifierContainer {
+  float:right;
+  height:0px;
+}
+
+/* TABLET */
+@media screen and (max-width: 1024px) {
+  .container {
+    margin:0 42px 232px 42px;
+  }
+  .animated h3 {
+    font-size: 24px;
+    line-height:29px;
+  }
+  .recordsGrid ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 4px 4px;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . .";
+  }
+  .recordsList {
+    width:100%;
+    line-height:17px;
+    font-size:14px;
+  }
+  .recordsList li {
+    margin-bottom:11px;
+  }
+  .highlight {
+    display:block;
+    text-align:center;
+  }
+  .checkmark {
+    margin-right:4px;
+  }
+  .checkmark, .spin {
+    position:relative;
+    top:4px;
+  }
+  .checkingFor h3 {
+    text-align:center;
+  }
+  .magnifierContainer {
+    position:absolute;
+    height:0px;
+    width:0px;
+  }
+  .magnifierContainer img {
+    position:relative;
+    z-index:2;
+    top:-341px;
+    left:60vw;
+    transform: scale(0.72);
+  }
+  .marketing {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .leftColumn {
+    display:flex;
+    flex-direction: row;
+    gap: 24px;
+    width:100%;
+    margin-right:0;
+  }
+  .leftColumn .card {
+    flex: 0 0 auto;
+    width: calc(50% - 12px);
+  }
+  .rightColumn {
+    width:100%;
+  }
+}
+
+/* PHONE */
+@media screen and (max-width: 768px) {
+  .container {
+    margin:0 20px 42px 20px;
+  }
+  .leftColumn {
+    width: 100%;
+    margin-right:0;
+  }
+  .rightColumn {
+    width:100%;
+  }
+  .recordsList {
+    width:100%;
+    line-height:12px;
+    font-size:10px;
+  }
+  .recordsGrid ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 4px 4px;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+  }
+  .recordsList li {
+    margin-bottom:8px;
+  }
+  .card {
+    width:100%;
+    display:block;
+    padding:16px 0 24px 16px;
+  }
+  .animated h1 {
+    font-size:18px;
+    font-weight:600;
+    line-height:22px;
+  }
+  .animated h3 {
+    font-size:12px;
+    line-height:14px;
+  }
+  .checkingFor h3 {
+    text-align:left;
+  }
+  .magnifierContainer img {
+    top:-363px;
+    left:142px;
+    transform: scale(0.28);
+  }
+  .leftColumn .card {
+    padding-right:16px;
+    width:100%;
+  }
+  .leftColumn .searchingFor {
+    display:none;
+  }
+  .rightColumn {
+    display:block;
+  }
+  .rightColumn .searchingFor {
+    display:block;
+    padding-bottom:10px;
+  }
+  .searchingFor h3 {
+    font-weight:400;
+  }
+  .searchingFor .profile {
+    margin-top:3px;
+  }
+  .searchingFor .profileInfo {
+    position:relative;
+    top: -6px;
+    margin-left:6px;
+    display:inline-flex;
+    flex-direction:row;
+    gap: 6px;
+  }
+  .profileInfo h1 {
+    font-size:14px;
+    display:flex;
+    line-height:17px;
+  }
+  .profileInfo p {
+    font-size:12px;
+    display:flex;
+    line-height:17px;
+  }
+}

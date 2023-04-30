@@ -1,0 +1,132 @@
+.results {
+  text-align:center;
+  margin:0 auto;
+  max-width:1356px;
+}
+.check, .results h1 {display:inline-block;}
+.heading {
+  vertical-align: top;
+}
+.orange {
+  color:var(--red);
+}
+.results h1 {
+  vertical-align: top;
+  margin-top:1rem;
+}
+.sortByContainer {
+  margin-top:48px;
+  margin-bottom:16px;
+  text-align:right;
+}
+.sortBy label {
+  font-size:24px;
+  position:relative;
+  top:4px;
+  line-height:29px;
+  color:var(--disabledText);
+}
+.sortBySelect {
+  width:200px;
+  margin-left:16px;
+  padding:10px 16px 11px 16px;
+  margin-right:0;
+}
+.headers {
+  background-color:var(--link-color);
+  color:#fff;
+  font-weight:700;
+  font-size:18px;
+  line-height:22px;
+}
+.name {
+  font-weight:700;
+  font-size:18px;
+}
+.result, .headers {
+  display:flex;
+  justify-content:space-evenly;
+  text-align:left;
+  border-radius:10px;
+  padding-left:56px;
+}
+.result {
+  border:1px solid var(--outline-alt);
+  box-shadow:4px 4px 10px var(--black15);
+  margin-top:24px;
+  cursor:pointer;
+}
+.result:hover {
+  box-shadow:4px 4px 10px var(--black50);
+}
+.result:nth-child(odd) {
+  background-color:var(--shaded-background);
+}
+.viewReport button {
+  width:213px;
+}
+.resultList {
+  margin-bottom:40px;
+}
+.showMore {
+  color:var(--link-color);
+  font-size:24px;
+  line-height:29px;
+  font-weight:900;
+  cursor:pointer;
+  padding-bottom:4px;
+  margin-bottom:64px;
+}
+.showMore:hover {
+  text-decoration:underline;
+}
+.header {
+  padding:24px 0;
+}
+.result > div {
+  padding:32px 0 36px 0;
+}
+.header, .result > div {
+  flex:1;
+  width:24%;
+}
+.locations img, .relatives img{
+  display:inline-block;
+  margin-right:12px;
+  vertical-align: top;
+}
+.locations > div, .relatives > div {
+  font-weight:500;
+  font-size:16px;
+  line-height:19px;
+  display:inline-block;
+  vertical-align: top;
+}
+
+/* TABLET */
+@media screen and (max-width:1024px) {
+  .heading h1 {
+    font-size:24px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+  .results {
+    margin: 64px 42px;
+  }
+  .viewReport button {
+    width: 124px;
+    font-size:12px;
+    line-height:14px;
+  }
+}
+
+/* PHONE */
+@media screen and (max-width:768px) {
+  .results {
+    margin: 32px 13px;
+  }
+  .heading h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

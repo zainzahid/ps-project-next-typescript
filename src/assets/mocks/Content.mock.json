@@ -1,0 +1,386 @@
+{
+  "pages": {
+    "homepage": {
+      "default": [
+        {
+          "order": 0,
+          "format": "default",
+          "content": [
+            {
+              "component": "Hero",
+              "props": {
+                "title": "Find Information on Anyone",
+                "byline": "Millions of satisfied customers have trusted us with their confidential searches",
+                "image": "/img/magnifine-glass.webp"
+              }
+            },
+            {
+              "component": "SearchBar",
+              "props": {
+                "title": "Find Criminal Records, Bankruptcies, Social Media Accounts, Online Photos, Contact Info and More!"
+              }
+            },
+            {
+              "component":"Card",
+              "props": {
+                "title": "About Us",
+                "body": "<p>WI was founded by an expert team of data scientists and engineers with 30+ years of combined experience delivering public record information via the Internet. Our goal is total customer satisfaction. We search over 12 billion public records from thousands of sources to create accurate, comprehensive reports on almost anyone in the USA. Our specialty is running background checks, searching criminal records, and digging up hidden information on the dark web - all so you know the deep truth about the people in your life. Look up new romances, old class mates, annoying neighbors, strange coworkers, friends, and relatives. Assure the safety of yourself and your loved ones with our 100% guaranteed anonymous searches.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "order":1,
+          "format": "shaded",
+          "title": "Most Popular Uses",
+          "content": [
+            {
+              "component": "CardGrid",
+              "props": {
+                "cards":[
+                  { "title":"Date Safely", "imageUrl":"/img/date-safely.webp", "callouts":["Protect yourself from catfishers and scammers", "Find out if they're lying about being divorced", "Reveal secret social media accounts or criminal records"] },
+                  { "title":"Find Criminal Records", "imageUrl":"/img/criminal-lookup.webp", "callouts":["Keep your family safe from criminals", "Discover sex offenders in your life","Reveal if someone you know has a dangerous and violent past"]},
+                  { "title":"Neighbor Lookup", "imageUrl":"/img/break-in.webp", "callouts":["Background check suspicious neighbors","Protect your children from nearby sex offenders","Find out if anyone that lives near you has a history of violence"]},
+                  { "title":"Search Yourself", "imageUrl":"/img/search-yourself.webp","callouts":["See what information people can find about you on the internet","Can someone easily find out where you live?","Protect yourself and your family from stalkers"]}
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "order":2,
+          "format":"altshaded",
+          "content": [
+            {
+              "component":"SearchBar",
+              "props": {
+                "section":true,
+                "title":"Search now for instant results!"
+              }
+            }
+          ]
+        }
+      ],
+      "variations": [
+        {
+          "condition": [],
+          "content": []
+        }
+      ],
+      "seo": {
+        "title": "{BRAND}",
+        "description": "Homepage"
+      },
+      "id": "homepage"
+    },
+    "loader": {
+      "default": [
+        {
+          "order": 0,
+          "format": "default",
+          "time": 8000,
+          "content": [
+            {
+              "component": "Searching",
+              "props": {
+                "title": "{TARGET}"
+              }
+            }
+          ]
+        },
+        {
+          "order": 1,
+          "format": "default",
+          "time": 15000,
+          "content": [
+            {
+              "component": "Question",
+              "props": {
+                "title": "Where has ${TARGET} ever lived?",
+                "fields": [{ "name": "city", "type": "text", "placeholder": "Enter City" }]
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "format": "default",
+          "time": 15000,
+          "content": [
+            {
+              "component": "Interests",
+              "props": { }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "format": "default",
+          "time": 15000,
+          "content": [
+            {
+              "component": "Question",
+              "props": {
+                "title": "Narrow Your Search Results",
+                "fields": [
+                  { "name": "age", "type": "select", "options": [{"value":"18-40", "label":"18-40"}, {"value":"41-60","label":"41-60"}, {"value":"61-80","label":"61-80"}, {"value":"80+","label":"80+"}], "placeholder": "Select Age" },
+                  { "name": "middleInitial", "type": "text", "placeholder": "Enter Middle Initial" }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "format": "default",
+          "time": 15000,
+          "content": [
+            {
+              "component": "Confirm",
+              "props": {}
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "format": "default",
+          "time": 30000,
+          "content": [
+            {
+              "component": "Animated",
+              "props": {
+                "target": "${TARGET}",
+                "location": "${LOCATION}"
+              }
+            }
+          ]
+        }
+      ],
+      "thinmatch": [
+        {
+          "order": 0,
+          "format": "default",
+          "time": 8000,
+          "content": [
+            {
+              "component": "Searching",
+              "props": {
+                "title": "{TARGET}"
+              }
+            }
+          ]
+        },
+        {
+          "order": 1,
+          "format": "default",
+          "time": 15000,
+          "content": [
+            {
+              "component": "Question",
+              "props": {
+                "title": "Where has ${TARGET} ever lived?",
+                "fields": [{ "name": "city", "type": "text", "placeholder": "Enter City" }]
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "format": "default",
+          "time": 15000,
+          "content": [
+            {
+              "component": "Interests",
+              "props": { }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "format": "default",
+          "time": 15000,
+          "content": [
+            {
+              "component": "Question",
+              "props": {
+                "title": "Narrow Your Search Results",
+                "fields": [
+                  { "name": "age", "type": "select", "options": [{"value":"18-40", "label":"18-40"}, {"value":"41-60","label":"41-60"}, {"value":"61-80","label":"61-80"}, {"value":"80+","label":"80+"}], "placeholder": "Select Age" },
+                  { "name": "middleInitial", "type": "text", "placeholder": "Enter Middle Initial" }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "format": "default",
+          "time": 15000,
+          "content": [
+            {
+              "component": "Confirm",
+              "props": {
+                "route": "/signup"
+              }
+            }
+          ]
+        }
+      ],
+      "retailremarketing": [],
+      "tooManyResults": [],
+      "variations":[
+        {
+          "name": "ThinMatchNoSRP",
+          "condition": [
+            {
+              "type": "feature",
+              "name": "thin-match",
+              "value": true
+            },
+            {
+              "type": "state",
+              "name": "geo",
+              "value": ["CA"],
+              "operator": "or"
+            },
+            {
+              "type": "results",
+              "name": "noResults",
+              "value": 0,
+              "operator": "or"
+            }
+          ],
+          "content": "thinmatch"
+        },
+        {
+          "name": "TooManyResults",
+          "condition": [
+            {
+              "type": "results",
+              "name": "tooManyResults",
+              "value": 200
+            }
+          ],
+          "content": "toomanyresults"
+        },
+        {
+          "name": "RetailRemarketing",
+          "condition": [],
+          "content": "retailremarketing"
+        }
+      ]
+    },
+    "srp": {
+      "default": [
+        {
+          "order": 0,
+          "format": "default",
+          "content": [
+            {
+              "component": "Results"
+            },
+            {
+              "component":"SearchAgain",
+              "props": {
+                "title":"Didn't find who you are looking for?",
+                "byline": "Refine your search using these search tips:",
+                "recommendations": [
+                  "Double check your spelling",
+                  "Try entering their maiden name",
+                  "Try entering their middle name",
+                  "Narrow your search by adding a city"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "tooManyResults": [
+        {
+          "order": 0,
+          "format": "default",
+          "content": [
+            {
+              "component": "TooManyResults"
+            },
+            {
+              "component":"SearchAgain",
+              "props": {
+                "title":"Please narrow down your search",
+                "byline": "Refine your search using these search tips:",
+                "recommendations": [
+                  "Double check your spelling",
+                  "Try entering their maiden name",
+                  "Try entering their middle name",
+                  "Narrow your search by adding a city"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "variations": [
+        {
+          "name": "TooManyResults",
+          "condition": [
+            {
+              "type": "results",
+              "name": "tooManyResults",
+              "value": 200
+            }
+          ]
+        }
+      ]
+    },
+    "sup": {},
+    "mhp": {},
+    "membersearch": {}
+  },
+  "features": {
+    "id": "features",
+    "thin-match": {
+      "enabled": true,
+      "title": "Thin Match",
+      "description": "Thin Match is a feature that allows you to match a person to a record based on a single field. For example, you can match a person to a record based on their name, or their email address. This feature is useful for matching people to records that are not in your database, such as records from a third party."
+    }
+  },
+  "globals": {
+    "id":"globals",
+    "brand": "PR",
+    "logo": "/img/wi-logo.svg",
+    "footer": {
+      "id":"footer",
+      "content": [
+        "DISCLAIMER: You may not use our service or the information it provides to make decisions about consumer credit, employment, insurance, tenant screening, or any other purpose that would require FCRA compliance. PrivateRecords does not provide consumer reports and is not a consumer reporting agency. (These terms have special meanings under the Fair Credit Reporting Act, 15 USC 1681 et seq., (FCRA), which are incorporated herein by reference.) The information available on our website may not be 100% accurate, complete, or up to date, so do not use it as a substitute for your own due diligence, especially if you have concerns about a person's criminal history. PR does not make any representation or warranty about the accuracy of the information available through our website or about the character or integrity of the person about whom you inquire. For more information, please review the Terms of Use."
+      ],
+      "copyright": "Copyright © {YEAR} {BRAND} all rights reserved. Reproduction in whole or in part without express written permission of PrivateRecords is prohibited. By using our content, products & services you agree to our <a href='/terms-of-use'>Terms of Use</a>, and <a href='/privacy-policy'>Privacy Policy<a>.",
+      "links": [
+        {
+          "title": "Terms of Use",
+          "url": "/terms-of-use",
+          "id": "TermsOfUse"
+        },
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy",
+          "id": "PrivacyPolicy"
+        },
+        {
+          "title": "Do Not Sell My Info",
+          "url": "/do-not-sell-my-info",
+          "id": "DoNotSellMyInfo"
+        },
+        {
+          "title": "Contact Us",
+          "url": "/contact-us",
+          "id": "ContactUs"
+        }
+      ]
+    }
+  },
+  "name": "test",
+  "version": "0.0.1",
+  "description": "test",
+  "author": "test",
+  "lastUpdated": "2022-12-28T16:00:00.000Z"
+}

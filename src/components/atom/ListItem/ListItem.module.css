@@ -1,0 +1,38 @@
+.listItem {
+  list-style-type: none;
+}
+.Bullet span::before {
+  content: "•";
+  font-size: 24px;
+  line-height: 29px;
+  margin-right: 12px;
+  height:2.5rem;
+  float:left;
+}
+.Bullet span {
+  display:inline-block;
+  width: calc(100% - 80px);
+  vertical-align: top;
+  margin-top:0.5rem;
+}
+.NoBullet {
+  margin-bottom:12px;
+}
+.NoBullet:last-child {
+  margin-bottom:0;
+}
+.NoBullet span {
+  font-weight: 700;
+  font-size:24px;
+  line-height:29px;
+  position:relative;
+  top: -25%;
+}
+.listItem img {
+  border-radius:50%;
+  padding: 8px;
+  text-align:center;
+  aspect-ratio: 1/1;
+  box-shadow: 4px 4px 10px var(--black25);
+  margin-right: 12px;
+}

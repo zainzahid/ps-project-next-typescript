@@ -1,0 +1,85 @@
+.buttonGrid {
+  margin:0 auto;
+  max-width:728px;
+}
+.gridHeader, .gridFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.5612rem;
+}
+.button {
+  padding: 1.5rem 1rem;
+  border: 3px solid transparent;
+  text-align: center;
+  vertical-align: middle;
+  cursor:pointer;
+  border-radius:5px;
+  outline:2px solid transparent;
+  box-shadow:0 0 3px var(--outline),-2px -2px 4px var(--white), 2px 2px 4px var(--black25);
+}
+.button img {
+  aspect-ratio:1/1;
+  margin-bottom:1.5rem;
+}
+.button:hover {
+  border-color: var(--link-color);
+  background-color: var(--link-secondary-highlight);
+}
+.button[attr-active="true"] {
+  border: 3px solid var(--link-color);
+  background-color: var(--link-secondary-highlight);
+  outline:none;
+}
+.label {
+  text-align: center;
+  line-height: 22px;
+  font-size: 1.125rem;
+  -webkit-user-select: none;
+  user-select:none;
+}
+.gridHeader, .gridFooter, .image {
+  text-align:center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px 40px;
+  grid-template-areas:
+    ". ."
+    ". .";
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width:768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px 16px;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+    width: 88.33%;
+    margin: 16px auto 32px auto;
+  }
+  .label {
+    font-size:12px;
+    line-height:14px;
+  }
+  .image img {
+    width:32px;
+    height:32px;
+    margin-bottom:12px;
+  }
+  .button {
+    padding:12px 24px 5px 24px;
+  }
+  .gridFooter {
+    margin-bottom:0.5rem;
+  }
+  .gridFooter button {
+    width:213px;
+  }
+}

@@ -1,0 +1,12 @@
+.card {
+  border-radius:10px;
+  padding:5.6%;
+  background-color:var(--white);
+  flex-grow:1;
+}
+.Flat {
+  border:2px solid #eee;
+}
+.Raised {
+  box-shadow:4px 4px 10px var(--black25);
+}

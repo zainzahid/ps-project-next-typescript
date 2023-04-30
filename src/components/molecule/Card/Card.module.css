@@ -1,0 +1,76 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px 12.5%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". .";
+  max-width:1061px;
+  margin:0 auto;
+}
+.card {
+  border-radius:10px;
+  box-shadow:4px 4px 10px var(--black25);
+  padding:5.6%;
+  background-color:var(--white);
+  flex-grow:1;
+}
+.card h2 {
+  text-align:center;
+  margin-bottom:0.75rem;
+  text-transform: uppercase;
+  font-weight:900;
+}
+.card ul {
+  line-height:14px;
+  display:inline-block;
+  width:50.76%;
+  margin:0 5.6%;
+  vertical-align: top;
+}
+.card img {
+  flex-grow:1;
+  width:37.021%;
+  aspect-ratio:1/1;
+  height:auto !important;
+  display:inline-block;
+  border-radius:10px;
+}
+.card ul li {
+  margin-bottom:0.75rem;
+  line-height:19px;
+}
+/* Phone */
+@media screen and (max-width:768px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      ".";
+  }
+  .card {
+    padding:5% 5% 0 5%;
+  }
+  .card h2 {
+    font-size:18px;
+    line-height:22px;
+  }
+  .card ul {
+    width: 45%;
+    margin-left:8px;
+  }
+  .card ul li {
+    line-height:14px;
+    font-size:12px;
+  }
+  .card img {
+    width:130px;
+  };
+}

@@ -1,0 +1,39 @@
+.results {
+  text-align:center;
+  margin:0 auto;
+  max-width:1356px;
+}
+.check, .results h1 {display:inline-block;}
+.heading {
+  vertical-align: top;
+}
+.orange {
+  color:var(--red);
+}
+.results h1 {
+  vertical-align: top;
+  margin-top:1rem;
+}
+
+/* TABLET */
+@media screen and (max-width:1024px) {
+  .heading h1 {
+    font-size:24px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+  .results {
+    margin: 64px 42px;
+  }
+}
+
+/* PHONE */
+@media screen and (max-width:768px) {
+  .results {
+    margin: 32px 13px;
+  }
+  .heading h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

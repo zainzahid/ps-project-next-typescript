@@ -1,0 +1,82 @@
+.searchAgain {
+  background-color:var(--shaded-background);
+  padding:96px 0 89px 0;
+}
+.container {
+  max-width:1164px;
+  margin:0 auto;
+}
+.left {
+  width:calc(100% - 442px);
+  vertical-align: top;
+  display:inline-block;
+}
+.left h1 {
+  margin-bottom:27px;
+}
+.left p {
+  margin-bottom:8px;
+  font-size:24px;
+  line-height:29px;
+}
+.left ul {
+  margin-left:20px;
+}
+.left li {
+  font-size:18px;
+  line-height:22px;
+  font-weight:400;
+}
+.right {
+  text-align:center;
+  vertical-align: top;
+  display:inline-block;
+  width:442px;
+}
+.right input, .right select {
+  width:calc(50% - 8px);
+  margin-right:0;
+}
+.field {
+  margin-bottom:16px;
+}
+.field:nth-child(odd) {
+  margin-right:16px;
+}
+.field:nth-child(even) {
+  margin-right:0;
+}
+.fields {
+  margin-bottom:32px;
+}
+.right button {
+  width:213px;
+}
+
+/* TABLET */
+@media screen and (max-width:1024px) {
+  .searchAgain {
+    padding:54px 125px;
+  }
+  .searchAgain .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchAgain .left {
+    margin-bottom: 48px;
+  }
+  .searchAgain .left, .searchAgain .right {
+    width: 100%;
+    display: block;
+  }
+  .searchAgain input, .searchAgain select {
+    width: 213px;
+  }
+}
+
+/* PHONE */
+@media screen and (max-width:768px) {
+  .searchAgain {
+    padding:32px 13px;
+  }
+}

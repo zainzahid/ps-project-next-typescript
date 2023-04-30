@@ -1,0 +1,16 @@
+.interests {
+  margin:80px 0;
+  text-align: center;
+}
+.interests h1 {
+  margin-bottom:0.75rem;
+}
+
+@media screen and (max-width:768px) {
+  .interests h1 {
+    font-size: 24px;
+    line-height:29px;
+    width:80%;
+    margin:0 auto 12px auto;
+  }
+}

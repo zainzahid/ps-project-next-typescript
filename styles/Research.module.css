@@ -1,0 +1,132 @@
+.research h1 {
+  text-align: center;
+}
+.pageHeading {
+  margin: 35px auto;
+}
+.pageContent {
+  margin: 0 auto 32px auto;
+  padding: 24px 58px 48px 58px;
+  max-width: 1050px;
+}
+.pageContent > h1 {
+  margin-bottom: 24px;
+}
+.ulFill {
+  line-height:24px;
+  font-size:20px;
+  font-weight:400;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+.socialImg {
+  margin:24px auto 0 auto;
+}
+.backWarning {
+  margin: 32px auto 17px auto;
+  text-align:center;
+}
+.filledLi img {
+  background-color: var(--link-color);
+  padding:11px;
+  height:64px;
+  width: 64px;
+}
+.contactForm :global(.col3) input {
+  width:143px;
+}
+.contactForm :global(.col6) input {
+  width:311px;
+}
+.contactForm :global(.col12) input {
+  width: 100%;
+}
+.alth1 {
+  font-weight: 600;
+  font-size:32px;
+  line-height: 38px;
+}
+.alth3 {
+  font-weight: 600;
+  font-size:24px;
+  line-height:29px;
+  color: var(--cta-primary);
+  text-transform: uppercase;
+}
+.chooseUs {
+  padding:24px 32px 48px 32px;
+}
+.chooseUs p {
+  font-size:24px;
+  font-weight: 300;
+  line-height:29px;
+}
+.chooseUs :global(.row) {
+  margin-bottom:20px;
+}
+.chooseUs :global(.row):last-child {
+  margin-bottom:0;
+}
+.chooseUs .bubble {
+  height: 64px;
+  width: 64px;
+}
+.accountFormField {
+  text-align: left;
+  width:100%;
+  margin-bottom:16px;
+}
+.accountFormField input {
+  width: 100%;
+  margin-right:0;
+  margin-top:4px;
+  display:block;
+}
+.contactBtn {
+  margin:24px auto 0 auto;
+}
+.contactForm {
+  margin: 0 auto;
+  max-width: 638px;
+}
+.contactForm p {
+  font-size:10px;
+  line-height: 12px;
+}
+.contactContainer {
+  max-width: 1354px;
+  display:flex;
+  gap:32px;
+  margin:0 auto;
+}
+.sampleReport {
+  margin:0 auto;
+}
+.bubble {
+  height: 96px;
+  width: 96px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  background-color: var(--link-color);
+}
+.bubble > img {
+  margin-top:11px;
+}
+.bubbleContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 18px auto 22px auto;
+}
+.center {
+  text-align: center;
+}
+.popularGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0;
+}

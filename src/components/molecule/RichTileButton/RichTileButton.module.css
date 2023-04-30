@@ -1,0 +1,22 @@
+.richTileButtonList {
+  margin:24px;
+  padding-bottom:24px;
+}
+.richTileButton {
+  border:1px solid var(--outline);
+  margin-bottom:25px;
+  padding:24px;
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+}
+.richTileButton:last-child {
+  margin-bottom:0;
+}
+.richTileButton:hover {
+  border-color:var(--link-color);
+}
+.selected {
+  border-color:var(--link-color);
+  background-color:var(--shade-link-color);
+}
